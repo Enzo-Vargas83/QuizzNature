@@ -1,0 +1,143 @@
+body{
+    background-image:url(image/ciel02.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.box {
+    margin: 0 auto;
+    width: 100%;
+    height: 10vh;;
+    border-radius: 1px;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+  }
+div {
+    vertical-align: middle;
+}
+.titre {
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin: 0;
+
+  }
+  
+.titre .letter {
+    display: inline-block;
+    line-height: 2em;
+  }
+
+.list{
+  position: fixed;
+  width: 100%;
+}
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: arial;
+    z-index: 3;
+   }
+   
+   ul li {
+    float: left;
+    width: 33.3333%;
+    background-color: black;
+    opacity: .8;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.25em;
+   }
+   
+   ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+   }
+   
+   ul li a:hover
+    {
+    background-color: green;
+    }
+  
+   ul li ul li{
+    display: none;
+    width: 100%;
+   }
+  
+   ul li ul li a
+   {
+    font-size: 0.75em;
+   }
+   
+   ul li:hover ul li {
+    display: block;
+   }
+  
+  ul li ul li:hover
+  {
+    background-color: green;
+  }
+
+    #hiddentxt a{
+        text-align: center;
+        font-family: Georgia;
+        margin: 0 auto;
+        background-attachment: fixed;
+        font-size: 0.4em;
+        color: white;
+        background-color: black;
+        width: 20%;
+        opacity: 0;
+    }
+    .imgf{
+        margin: 0;
+        padding: 0;
+        width: 5%;
+        height: 5%;
+        padding-bottom: 5em;
+        position: absolute; 
+        top: 55%;
+        left: 2%;
+        text-align: center;
+    }
+      .imgf:hover{
+        transition: all 1s ease;
+        animation-play-state: running;      
+        transform:scale(1.15);  
+        animation-play-state: paused;
+      } 
+    .imgf{
+        animation-play-state: paused; 
+      }
+      .imgf {
+        offset-path: path('M.5 122.7s24.7-275 276.9 0c327.1 356.7 266.1-330.3 548-33.3 256.9 270.7 271.1 0 271.1 0');
+        offset-distance: 0;
+        animation: move 4s infinite alternate;
+      }
+      
+      @keyframes move {
+        100% {
+          offset-distance: 100%;
+        }
+      }
+
+      /* iphone X */
+      @media (min-device-width: 370px) and (max-device-height: 814px) and (orientation : portrait){
+        body{
+          background-image: none;
+          background-color: gray;
+        }
+      }

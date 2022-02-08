@@ -1,0 +1,79 @@
+body {
+   margin: 0em;
+   background-image:url(image/cloud.png);
+   background-repeat:no-repeat;
+   background-size: cover;
+   }  
+
+#sectionBaladeMental{
+    display: inline;
+    margin: 5%;
+}
+#baladeLogo
+{
+    margin: 5%;
+    width: 10%;
+    border-radius: 60%;
+    z-index: 2;
+    transition: transform 0.5s 0.2s;
+}
+
+#baladeLogo:hover
+{
+    transform: scale(1.1);
+
+}
+
+#lang{
+    margin-top: 5%;
+}
+
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: arial;
+    z-index: 3;
+   }
+   
+   ul li {
+    float: left;
+    width: 33.33333%;
+    background-color: black;
+    opacity: .8;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.25em;
+   }
+   
+   ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+   }
+   
+   ul li a:hover
+    {
+    background-color: green;
+    }
+  
+   ul li ul li{
+    display: none;
+    width: 100%;
+   }
+  
+   ul li ul li a
+   {
+    font-size: 0.75em;
+   }
+   
+   ul li:hover ul li {
+    display: block;
+   }
+  
+  ul li ul li:hover
+  {
+    background-color: green;
+  }
+

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body {
+  background-image:url(image/jungle.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  font-family: 'Josefin Sans', sans-serif;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+}
+
+  #progress {
+    font-size: 3rem;
+    color: red;
+  }
+
+  #question {
+      font-size: 6.5em;
+      color: white;
+  }
+
+  #answer {
+      font-size: 3rem;
+  }
+  
+  button {
+    background-color: green;
+    opacity: 0.6;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 3rem;
+    width: 25%;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  button:hover {
+      transform: translateY(-10%);
+  }
+  .container.choices {
+      flex-wrap: wrap;
+      display: flex;
+  }
+
+  .fin {
+      font-size: 4em;
+  }
+
+  .btn_retour {
+    letter-spacing: .05rem;
+    border: solid #5B6DCD 5px;
+    list-style: none;
+    }
